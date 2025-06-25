@@ -20,7 +20,6 @@
         }
     }
 
-    // Verifica si es cliente
     $sql2 = "SELECT * FROM clientes WHERE correo = ?";
     $stmt2 = $conn->prepare($sql2);
     $stmt2->bind_param("s", $correo);
